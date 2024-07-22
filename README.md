@@ -36,6 +36,7 @@ En este caso se utilizó Microsoft SQL server.
 - Clonar el repositorio
     - https://github.com/abonic92/Desafio-Tecnico-Evaluador---NBCH
 - Crear la base de datos en SQL Server con el nombre "DesafioNBCH".
+    - Una vez creada la base de datos, crear la tabla `dbo.FeriadoLocal` mediante la consulta proporcionada en el archivo  `SQLQuery.sql`.
 - Edita el archivo datos `datos.properties` con la información para la conexión a la base de datos.
 - En pentaho configura la conexión a la base de datos con los siguietes parametros.
     - ${nombre.conexion}   --> Connection name
