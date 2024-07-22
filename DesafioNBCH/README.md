@@ -36,8 +36,16 @@ En este caso se utilizó Microsoft SQL server.
 - Clonar el repositorio
     - https://github.com/abonic92/Desafio-Tecnico-Evaluador---NBCH
 - Crear la base de datos en SQL Server con el nombre "DesafioNBCH".
+    - Una vez creada la base de datos, crear la tabla `dbo.FeriadoLocal` mediante la consulta proporcionada en el archivo  `SQLQuery.sql`.
 - Edita el archivo datos `datos.properties` con la información para la conexión a la base de datos.
-- En pentaho configura la conexión a la base de datos.
+- En pentaho configura la conexión a la base de datos con los siguietes parametros.
+    - ${nombre.conexion}   --> Connection name
+    - ${db.host}           --> Host Name
+    - ${db.database}       --> Database Name  
+    - ${db.instance}       --> Instance Name
+    - ${db.port}           --> Port Number
+    - ${db.username}       --> Username
+    - ${db.password}       --> Password
 - Edita la variable `PENTAHO_PATH` que se encuentra dentro del del archivo `Ejecutar.bat` con la ruta donde se encuentra instalado Pentaho
 - Ejecutar el archivo `Ejecutar.bat`
     - Ingresar como parámetro la ubicación del archivo `Feriados.xls`
